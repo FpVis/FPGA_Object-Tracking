@@ -34,7 +34,7 @@ The project was developed using Vivado 2020.2 and targets the BASYS-3 FPGA board
 - Provides motion status via LED indicators and output signals.
 
 ## Block Diagram
-![Demo Image](demo/block_diagram.png)
+![Demo Image](demo/diagram.png)
 ## Dependencies
 
 ### Hardware
