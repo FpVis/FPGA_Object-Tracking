@@ -3,7 +3,7 @@
 ## Overview
 The OV7670-Based Object Tracking System is a real-time object tracking implementation using FPGA technology. This system captures video from an OV7670 camera module, processes the frames to detect motion, and displays the results with tracking indicators on a VGA monitor.
 
-![Demo Image](Motion_detection_sobel_grayscale/demo/demo.png)
+![Demo Image](demo/demo.png)
 
 The project was developed using Vivado 2020.2 and targets the BASYS-3 FPGA board.
 
