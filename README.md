@@ -34,46 +34,7 @@ The project was developed using Vivado 2020.2 and targets the BASYS-3 FPGA board
 - Provides motion status via LED indicators and output signals.
 
 ## Block Diagram
-The system consists of the following key modules:
-
-1. **Clock Generator** (`clk_wiz_0`)
-   - Generates clock domains: 12MHz, 25MHz, and 100MHz
-
-2. **OV7670 Configuration** (`OV7670_SCCB`)
-   - Handles SCCB communication with camera
-   - Configures camera settings for QVGA output
-
-3. **VGA Controller** (`vga_controller`)
-   - Generates timing signals and coordinates
-   - Manages quadrant-based display layout
-
-4. **OV7670 Controller** (`ov7670_controller`)
-   - Captures pixel data from camera
-   - Converts to appropriate color format
-
-5. **Frame Buffers** (`frameBuffer_4bit`)
-   - Stores multiple consecutive frames
-   - Enables frame differencing for motion detection
-
-6. **RGB to Grayscale Converter** (`rgb2gray`)
-   - Converts RGB data to grayscale for processing
-
-7. **Sobel Edge Detector** (`sobel_filter_5x5`)
-   - Enhances edges in the image
-   - Improves motion detection accuracy
-
-8. **Difference Detector** (`diff_detector_pixel`)
-   - Compares consecutive frames
-   - Identifies pixel-level changes
-
-9. **Object Tracker**
-   - Aggregates motion data
-   - Generates bounding box for tracked objects
-
-10. **RGB Output** (`RGB_out`)
-    - Formats processed data for VGA display
-    - Manages split-screen layout and object highlighting
-
+![Demo Image](demo/block_diagram.png)
 ## Dependencies
 
 ### Hardware
