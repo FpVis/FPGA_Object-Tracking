@@ -11,7 +11,7 @@ The project was developed using Vivado 2020.2 and targets the BASYS-3 FPGA board
 
 ### Image Capture
 - Captures QVGA (320x240) frames from the OV7670 camera in RGB555 format.
-- Configures the camera module via SCCB (I2C-like) protocol.
+- Configures the camera module by SCCB (I2C-like) protocol.
 - Supports multiple frame buffering for motion detection.
 
 ### Image Processing
@@ -30,8 +30,8 @@ The project was developed using Vivado 2020.2 and targets the BASYS-3 FPGA board
 ### Object Tracking
 - Detects moving objects through consecutive frame analysis.
 - Draws bounding boxes around detected motion.
-- Includes adjustable detection sensitivity via threshold controls.
-- Provides motion status via LED indicators and output signals.
+- Includes adjustable detection sensitivity by threshold controls.
+- Provides motion status by LED indicators and output signals.
 
 ## Block Diagram
 ![Demo Image](demo/diagram.png)
